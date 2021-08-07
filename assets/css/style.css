@@ -87,7 +87,7 @@ nav h1{
     position: absolute;
     top: 0;
     right: 0;
-    background-image: url(../images/banner\ option\ 2.png);
+    background-image: url(../images/homepage\ banner.png);
     background-size: cover;
     background-position: center;
     margin-bottom: 25px;
@@ -134,9 +134,9 @@ nav h1{
 }
 
 #pic img{
-    width: 600px; 
+    padding: 2%;
     height: 500px;
-    padding-left: 200px;
+
 }
 
 #intro{
@@ -152,7 +152,7 @@ nav h1{
     color: var(--backgroundColor)
 }
 #intro p{
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
 }
 
 /* Portfolio Styling  */
@@ -206,8 +206,9 @@ nav h1{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 10px;
 }
 
 #portfolio p{
@@ -274,12 +275,24 @@ footer{
     * {
       width: 70%;
       flex-basis: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
-  }
+    
+}
 
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     * {
       width: 30%;
       flex-basis: 100%;
+    
     }
-  }
+    .navbar{
+       flex-basis: 100%;
+       width: 30%;
+    }
+    #about{
+        display: block;
+    }
+}
